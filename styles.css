@@ -1,0 +1,386 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(54, 72, 99);
+    font-family: "Poppins", Helvetica, sans-serif;
+}
+
+nav {
+    background-color: rgb(35, 43, 54);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav h3 {
+    color: aliceblue;
+    letter-spacing: 2px;
+    margin: 0 30px 0 0;
+}
+
+nav img {
+    height: 30px;
+}
+
+nav .logo {
+    height: 30px;
+    margin: 0 10px 0 0;
+}
+
+nav .menu-container, .tech-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav .nav-link {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav .nav-link:hover {
+    background-color: rgb(54, 72, 99);
+    border-radius: 6px;
+}
+
+nav .hamburger {
+    display: none;
+}
+
+nav .hamburger-list-container .nav-link {
+    display: block;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.hamburger-list-container {
+    display: none;
+}
+
+.socials {
+    position: fixed;
+    top: 30%;
+    right: 0;
+    background-color: rgb(88, 107, 119);
+    width: 50px;
+    padding: 10px 5px;
+    border-radius: 20px 0 0 20px;
+}
+
+.socials img {
+    width: 100%;
+}
+
+.main-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.headshot {
+    width: 355px;
+    border-radius: 50%;
+    padding: 40px;
+    margin-left: 10vw;
+}
+
+.introduction {
+    width: 40vw;
+    padding: 30px;
+    border-left: 4px solid aliceblue;
+    box-sizing: border-box;
+}
+
+section {
+    color: aliceblue;
+}
+
+section h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+section a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+.arrow {
+    border: solid aliceblue;
+    border-width: 0 8px 8px 0;
+    padding: 15px;
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+    padding: 40px 0 0 40px;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.work-section {
+    background-color: rgb(71, 91, 116);
+    padding: 80px 50px;
+}
+
+.work-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work-card {
+    width: 25%;
+    background-color: rgb(30, 39, 49);
+    margin: 10px;
+    padding: 0 50px 50px 50px;
+}
+
+.html1 {
+    border-top: 8px solid rgb(242, 128, 87);
+}
+
+.css {
+    border-top: 8px solid rgb(123, 191, 255);
+}
+
+.js {
+    border-top: 8px solid rgb(232, 242, 87);
+}
+
+.react {
+    border-top: 8px solid rgb(104, 231, 45);
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.quote-container {
+    width: 40%;
+    padding: 40px;
+}
+
+.quote {
+    font-size: 40px;
+    font-style: italic;
+}
+
+.quote-container p {
+    float: right;
+}
+
+.about-container {
+    width: 30%;
+    padding: 80px 0;
+}
+
+footer {
+    background-color: rgb(72, 90, 138);
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* About Me CSS Style */
+
+.about-me {
+    background-color: rgb(71, 91, 121);
+    text-align: center;
+    padding: 80px;
+}
+
+.projects {
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headshot-about {
+    width: 335px;
+    border-radius: 50%;
+    padding: 40px;
+}
+
+table {
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+table td {
+    padding: 14px;
+}
+
+.projects #project {
+    min-width: 110px;
+}
+
+.projects #title {
+    min-width: 200px;
+}
+
+section.projects a {
+    color: rgb(245, 190, 38);
+}
+
+/* Contact CSS */
+
+.contact-section {
+    text-align: center;
+    padding: 250px;
+}
+
+.contact-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-section a {
+    color: rgb(245, 190, 38);
+}
+
+@media screen and (max-width: 1000px) {
+    nav h3{
+        display: none;
+    }
+
+    .main-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .introduction {
+        width: 90vw;
+        border-left: none;
+        text-align: center;
+    }
+
+    .headshot {
+        margin: 0;
+        padding: 40px 0;
+    }
+
+    .work-card{
+        width: 100%;
+    }
+
+    .bounce {
+        padding: 50px 0 0 0;
+    }
+
+    /* About Me CSS Style */
+
+    .about-me {
+        padding: 10px;
+    }
+
+    .headshot-about {
+        padding: 40px 0px;
+    }
+
+    /* Contact Me CSS */
+
+    .contact-section {
+        padding: 250px 100px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    nav .hamburger {
+        display: block;
+        color: aliceblue;
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+    }
+
+    .menu-container .nav-links {
+        display: none;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .about-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quote-container, .about-container {
+        padding: 60px 0;
+        width: 90%;
+    }
+
+    .hamburger-list-container {
+        display: block;
+    }
+    
+
+    /* About Me CSS Style */
+
+    .projects #project {
+        min-width: 0px;
+    }
+    
+    .projects #title {
+        min-width: 0px;
+    }
+
+    /* Contact Me CSS */
+
+    .contact-section {
+        padding: 250px 50px;
+    }
+
+}
