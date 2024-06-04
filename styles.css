@@ -133,6 +133,15 @@ nav .hamburger-list-container .nav-link {
   box-sizing: border-box;
 }
 
+.work-card {
+  transition: all 0.3s;
+}
+
+.work-card:hover {
+  transform: scale(1.05);
+  background-color: rgba(222, 184, 135, 0.389);
+}
+
 section {
   color: aliceblue;
 }
