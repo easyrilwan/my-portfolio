@@ -378,6 +378,10 @@ section.projects a {
 }
 
 @media screen and (max-width: 600px) {
+  .main-section {
+    padding-top: 50px;
+  }
+
   nav .hamburger {
     display: block;
     color: aliceblue;
