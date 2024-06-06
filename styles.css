@@ -446,6 +446,10 @@ section.projects a {
 
   /* About Me CSS Style */
 
+  .about-me img {
+    width: 100%;
+  }
+
   .projects #project {
     min-width: 0px;
   }
@@ -458,5 +462,11 @@ section.projects a {
 
   .contact-section {
     padding: 120px 50px;
+  }
+
+  table {
+    text-align: start;
+    width: 0.1%;
+    /* white-space: nowrap; */
   }
 }
