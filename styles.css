@@ -450,6 +450,10 @@ section.projects a {
     width: 100%;
   }
 
+  .projects {
+    overflow-x: hidden;
+  }
+
   .projects #project {
     min-width: 0px;
   }
@@ -465,7 +469,6 @@ section.projects a {
   }
 
   table {
-    text-align: start;
     width: 0.1%;
     /* white-space: nowrap; */
   }
