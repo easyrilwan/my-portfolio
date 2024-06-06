@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  background-color: #485a8a;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -27,6 +31,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav .hamburger:active {
+  box-shadow: inset 0px 0px 800px rgb(72, 90, 138);
 }
 
 nav h3 {
@@ -335,6 +343,7 @@ section.projects a {
   }
 
   .main-section {
+    padding-top: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -363,7 +372,7 @@ section.projects a {
   /* About Me CSS Style */
 
   .about-me {
-    padding: 10px;
+    padding: 50px;
   }
 
   .headshot-about {
@@ -392,6 +401,16 @@ section.projects a {
 
   .menu-container .nav-links {
     display: none;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+
+  .nav-link:hover {
+    background-color: rgb(54, 72, 99);
+    border-radius: 0;
+    transform: none;
   }
 
   .socials {
